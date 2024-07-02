@@ -1,12 +1,12 @@
 import logging
 import os
-import requests
+import requests # type: ignore
 import json
-import azure.functions as func
-from azure.identity import DefaultAzureCredential
-from azure.keyvault.secrets import SecretClient
-from openpyxl import Workbook
-from azure.storage.blob import BlobServiceClient
+import azure.functions as func # type: ignore
+from azure.identity import DefaultAzureCredential # type: ignore
+from azure.keyvault.secrets import SecretClient # type: ignore
+from openpyxl import Workbook # type: ignore
+from azure.storage.blob import BlobServiceClient # type: ignore
 from datetime import datetime
 
 def get_secret(key_vault_uri, secret_name):
